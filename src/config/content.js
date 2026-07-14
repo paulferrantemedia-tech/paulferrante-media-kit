@@ -132,6 +132,6 @@ export const content = {
     // Formspree endpoint. Replace `your-form-id` with your real form id, then
     // redeploy. Until then the form shows a short "not yet configured" note and
     // the email fallback still works.
-    formEndpoint: "https://formspree.io/f/your-form-id",
+    formEndpoint: "https://formspree.io/f/xqerkvrv",
   },
 };
