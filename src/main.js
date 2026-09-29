@@ -189,6 +189,7 @@ function renderDemographics() {
         ${platRow("instagram", a.instagram)}
         ${platRow("youtube", a.youtube)}
       </div>
+      ${a.followersUpdated ? `<p class="reach-updated">follower counts updated ${esc(a.followersUpdated)}</p>` : ``}
     </div>
 
     <div class="demo-grid">
