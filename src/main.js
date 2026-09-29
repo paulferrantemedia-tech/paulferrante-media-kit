@@ -110,8 +110,11 @@ function renderPillars() {
 
 function renderFeatured() {
   const f = content.featured;
+  const filters = Array.isArray(f.filters) && f.filters.length ? f.filters : ["all"];
+  const tabs = filters.map((t, i) => `
+    <button type="button" class="filter-tab${i === 0 ? " is-active" : ""}" data-filter="${esc(t)}" aria-pressed="${i === 0 ? "true" : "false"}">${esc(t)}</button>`).join("");
   const cards = f.items.map((v) => `
-    <a class="work-card reveal" href="${esc(v.url)}" target="_blank" rel="noopener">
+    <a class="work-card reveal" href="${esc(v.url)}" target="_blank" rel="noopener" data-category="${esc(v.category || "all")}">
       <div class="work-cover">
         <img src="${v.cover}" alt="${esc(v.title)}" loading="lazy" width="1080" height="1350" />
         <span class="work-play">${ICON.play}</span>
@@ -128,7 +131,9 @@ function renderFeatured() {
       <p class="eyebrow">${esc(f.eyebrow)}</p>
       <h2>${esc(f.heading)}</h2>
     </div>
+    <div class="filter-tabs reveal" role="tablist" aria-label="filter work by category">${tabs}</div>
     <div class="work-grid">${cards}</div>
+    <p class="work-empty" hidden>nothing here yet — more coming soon.</p>
     <p class="work-footer reveal">${esc(f.footer)}</p>
   </section>`;
 }
@@ -342,6 +347,26 @@ function wire() {
     setTimeout(revealInView, 400);         // catch late image layout
     setTimeout(() => reveals.forEach((el) => el.classList.add("in")), 2500); // safety net
   }
+
+  // featured work filters
+  const tabs = [...document.querySelectorAll(".filter-tab")];
+  const cards = [...document.querySelectorAll(".work-card")];
+  const emptyNote = document.querySelector(".work-empty");
+  tabs.forEach((tab) => tab.addEventListener("click", () => {
+    const filter = tab.dataset.filter;
+    tabs.forEach((t) => {
+      const active = t === tab;
+      t.classList.toggle("is-active", active);
+      t.setAttribute("aria-pressed", String(active));
+    });
+    let visible = 0;
+    cards.forEach((card) => {
+      const show = filter === "all" || card.dataset.category === filter;
+      card.classList.toggle("is-hidden", !show);
+      if (show) visible++;
+    });
+    if (emptyNote) emptyNote.hidden = visible > 0;
+  }));
 
   // contact form
   const form = document.querySelector(".contact-form");

@@ -104,6 +104,14 @@ a.stat-card:hover { border-color:var(--sky); transform:translateY(-2px); }
 .work-title { font-size:15px; font-weight:600; }
 .work-footer { text-align:center; color:var(--muted); font-size:14px; margin:26px 0 0; }
 
+/* ── featured work filters ── */
+.filter-tabs { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+.filter-tab { font-family:var(--head); text-transform:lowercase; font-weight:700; font-size:14px; padding:10px 18px; border-radius:999px; border:1.5px solid var(--line); background:transparent; color:var(--muted); cursor:pointer; transition:background .15s ease, color .15s ease, border-color .15s ease; }
+.filter-tab:hover { border-color:var(--sky); color:var(--text); }
+.filter-tab.is-active { background:var(--sky); border-color:var(--sky); color:var(--ink); }
+.work-card.is-hidden { display:none; }
+.work-empty { text-align:center; color:var(--muted); font-size:14px; margin:8px 0 26px; }
+
 /* ── demographics ── */
 .reach { display:flex; flex-direction:column; gap:18px; background:linear-gradient(180deg,var(--surface),#101010); border:1px solid var(--line); border-radius:20px; padding:24px; margin-bottom:16px; }
 .reach-globe { display:flex; align-items:center; gap:16px; }

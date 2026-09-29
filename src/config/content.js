@@ -67,15 +67,19 @@ export const content = {
     eyebrow: "featured content",
     heading: "recent work",
     footer: "full portfolio available upon request",
+    filters: ["all", "travel", "dog dad", "comedy", "brand work"],
     // Cover images are swappable config slots. Cropped clean from phone screenshots
     // (status bar / app nav / view-count overlays removed, caption kept).
     items: [
-      { cover: "assets/config/covers/amex.jpg",              url: "https://www.instagram.com/reels/DMRSfiYPp-J/", platform: "Instagram", label: "Brand Integration",  title: "Native product demo (Amex)" },
-      { cover: "assets/config/covers/washos.jpg",            url: "https://www.instagram.com/p/DQQLs6ED7Nt/",     platform: "Instagram", label: "Brand Integration",  title: "Routine format (Washos)" },
-      { cover: "assets/config/covers/organic-lifestyle.jpg", url: "https://www.instagram.com/reels/DC0VE_pvcNR/", platform: "Instagram", label: "Organic Lifestyle",   title: "Day-to-day, non-sponsored" },
-      { cover: "assets/config/covers/practical-travel.jpg",  url: "https://www.instagram.com/reels/DFjggzIRqw3/", platform: "Instagram", label: "Practical Travel",    title: "Hotels, flights, real tips" },
-      { cover: "assets/config/covers/waymo.jpg",             url: "https://www.youtube.com/shorts/6_BUaTNoxDE",   platform: "YouTube",   label: "Ad-Ready Organic",    title: "Organic content, brand-integration ready (Waymo)" },
-      { cover: "assets/config/covers/relatable.jpg",         url: "https://www.youtube.com/shorts/qO4ltDFhahQ",   platform: "YouTube",   label: "Commentary",          title: "Relatable, brand-safe humour" },
+      { cover: "assets/config/covers/amex.jpg",              url: "https://www.instagram.com/reels/DMRSfiYPp-J/", platform: "Instagram", label: "Brand Integration",  title: "Native product demo (Amex)", category: "brand work" },
+      { cover: "assets/config/covers/washos.jpg",            url: "https://www.instagram.com/p/DQQLs6ED7Nt/",     platform: "Instagram", label: "Brand Integration",  title: "Routine format (Washos)", category: "brand work" },
+      { cover: "assets/config/covers/organic-lifestyle.jpg", url: "https://www.instagram.com/reels/DC0VE_pvcNR/", platform: "Instagram", label: "Organic Lifestyle",   title: "Day-to-day, non-sponsored", category: "travel" },
+      { cover: "assets/config/covers/practical-travel.jpg",  url: "https://www.instagram.com/reels/DFjggzIRqw3/", platform: "Instagram", label: "Practical Travel",    title: "Hotels, flights, real tips", category: "travel" },
+      { cover: "assets/config/covers/waymo.jpg",             url: "https://www.youtube.com/shorts/6_BUaTNoxDE",   platform: "YouTube",   label: "Ad-Ready Organic",    title: "Organic content, brand-integration ready (Waymo)", category: "travel" },
+      { cover: "assets/config/covers/relatable.jpg",         url: "https://www.youtube.com/shorts/qO4ltDFhahQ",   platform: "YouTube",   label: "Commentary",          title: "Relatable, brand-safe humour", category: "comedy" },
+      { cover: "assets/config/covers/dog-dressup.jpg",       url: "https://www.instagram.com/reel/Dccck2DoBFt/",  platform: "Instagram", label: "Dog Dad",             title: "frank v greta iq test", category: "dog dad" },
+      { cover: "assets/config/covers/dog-poop.jpg",          url: "https://www.instagram.com/reel/DSTg6WMD80-/",  platform: "Instagram", label: "Dog Dad",             title: "pov: your dog knocks anything under the couch", category: "dog dad" },
+      { cover: "assets/config/covers/dog-reactive.jpg",      url: "https://www.instagram.com/reel/DRddjFWj0QN/",  platform: "Instagram", label: "Dog Dad",             title: "when i have to decide if i want to bring my reactive dog out in public", category: "dog dad" },
     ],
   },
 
