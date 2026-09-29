@@ -119,6 +119,7 @@ a.stat-card:hover { border-color:var(--sky); transform:translateY(-2px); }
 .reach-num { display:block; font-family:var(--head); font-weight:800; font-size:40px; color:var(--sky); line-height:1; }
 .reach-cap { color:var(--muted); font-size:13px; }
 .plat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; border-top:1px solid var(--line); padding-top:18px; }
+.reach-updated { color:var(--muted); font-size:12px; margin:12px 0 0; }
 .plat { text-align:center; } .plat-num { display:block; font-family:var(--head); font-weight:800; font-size:22px; }
 .plat-name { color:var(--muted); font-size:12px; }
 .demo-grid { display:grid; grid-template-columns:1fr; gap:14px; }
