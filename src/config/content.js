@@ -12,6 +12,12 @@ export const content = {
     domain: "https://paulferrante.com",   // canonical (metadata / OG). Confirmed.
     // Swap for a professional address any time; used by the "send me an email" fallback.
     contactEmail: "paulferrante84@gmail.com",
+    // Profile links. Rendered in the contact section and footer.
+    socials: [
+      { label: "tiktok",    href: "https://www.tiktok.com/@paul_ferrante" },
+      { label: "instagram", href: "https://www.instagram.com/_paul_ferrante_/" },
+      { label: "youtube",   href: "https://www.youtube.com/@paul_ferrante/shorts" },
+    ],
     // Nav order + targets. `button:true` renders the filled contact pill.
     nav: [
       { label: "examples",                 href: "#featured" },
