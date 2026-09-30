@@ -252,16 +252,43 @@ function renderServices() {
 
 function renderPress() {
   const p = content.press;
-  if (!p.items || p.items.length === 0) return ""; // hide entirely, no placeholder press
-  const logos = p.items.map((m) => `
-    <a class="press-item reveal" href="${esc(m.url)}" target="_blank" rel="noopener">
-      <span class="press-outlet">${esc(m.outlet)}</span>
-      ${m.title ? `<span class="press-title">${esc(m.title)}</span>` : ""}
-    </a>`).join("");
+  if (!p.clusters || p.clusters.length === 0) return ""; // hide entirely, no placeholder press
+  const cards = p.clusters.map((c) => {
+    const n = c.items.length;
+    const media = c.media ? `
+      <div class="press-video">
+        <video controls preload="metadata" poster="${esc(c.media.poster)}" aria-label="${esc(c.story)} — ${esc(c.media.label)}">
+          <source src="${esc(c.media.src)}" type="video/mp4">
+        </video>
+        <span class="press-video-label">${esc(c.media.label)}</span>
+      </div>` : "";
+    const rows = c.items.map((m) => `
+      <li class="press-row">
+        <span class="press-outlet">${esc(m.outlet)}</span>
+        <span class="press-story">${esc(m.title)}</span>
+        ${m.tag ? `<span class="press-tag">${esc(m.tag)}</span>` : ""}
+        ${m.date ? `<span class="press-date">${esc(m.date)}</span>` : ""}
+        ${m.url ? `<a class="press-link" href="${esc(m.url)}" target="_blank" rel="noopener">read &rarr;</a>` : ""}
+      </li>`).join("");
+    return `
+    <article class="press-card reveal">
+      ${media}
+      <div class="press-body">
+        <h3>${esc(c.story)}</h3>
+        ${c.blurb ? `<p class="press-blurb">${esc(c.blurb)}</p>` : ""}
+        <span class="press-count">${n} ${n === 1 ? "piece" : "pieces"} of coverage</span>
+        <ul class="press-list">${rows}</ul>
+      </div>
+    </article>`;
+  }).join("");
   return `
   <section class="section press" id="press">
-    <p class="eyebrow reveal">${esc(p.eyebrow)}</p>
-    <div class="press-strip">${logos}</div>
+    <div class="section-head reveal">
+      <p class="eyebrow">${esc(p.eyebrow)}</p>
+      <h2>${esc(p.heading)}</h2>
+      ${p.sub ? `<p class="contact-copy">${esc(p.sub)}</p>` : ""}
+    </div>
+    <div class="press-grid">${cards}</div>
   </section>`;
 }
 

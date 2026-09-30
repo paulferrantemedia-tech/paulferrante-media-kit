@@ -23,6 +23,7 @@ export const content = {
       { label: "examples",                 href: "#featured" },
       { label: "how brands work with me",  href: "#services" },
       { label: "demographics",             href: "#demographics" },
+      { label: "press",                    href: "#press" },
       { label: "about",                    href: "#about" },
       { label: "contact me",               href: "#contact", button: true },
     ],
@@ -122,11 +123,104 @@ export const content = {
     ],
   },
 
-  // Media coverage. Renders only if `items` is non-empty. No placeholder press.
-  // Add real entries like: { outlet: "VoyageLA", title: "…", url: "https://…" }
+  // Media coverage, grouped by story so one viral story shows every outlet
+  // that covered it. Renders only if `clusters` is non-empty. No placeholder press.
+  // `media` (optional): { src, poster, label } renders a playable video at the
+  // top of the card. Coverage rows: { outlet, title, url?, date?, tag? }.
   press: {
     eyebrow: "featured on",
-    items: [],
+    heading: "press",
+    sub: "one viral story, every outlet that covered it",
+    clusters: [
+      {
+        story: "the coffee ordering fail",
+        blurb: "canadian expat couldn't order drip coffee in australia",
+        media: { src: "assets/coffee-story-web.mp4", poster: "assets/thumb-coffee.jpg", label: "studio 10 · 0:36" },
+        items: [
+          { outlet: "studio 10", title: "tv segment, network 10", tag: "video" },
+          { outlet: "news.com.au", title: "canadian man reveals embarrassing australian coffee mistake on tiktok", date: "dec 17, 2020",
+            url: "https://www.news.com.au/lifestyle/real-life/news-life/canadian-man-reveals-embarrassing-australian-coffee-mistake-on-tiktok/news-story/4904837a186e902055b5b84145f53017" },
+        ],
+      },
+      {
+        story: "three things about australia",
+        blurb: "magpie swooping season, group photo gags, and more",
+        media: { src: "assets/three-things-web.mp4", poster: "assets/thumb-three-things.jpg", label: "studio 10 · 1:30" },
+        items: [
+          { outlet: "studio 10", title: "tv segment, network 10", tag: "video" },
+          { outlet: "daily mail", title: "canadian expat shares the things he didn't know existed until he moved to australia", date: "aug 10, 2021",
+            url: "https://www.dailymail.co.uk/femail/article-9878251/Canadian-expat-Paul-Ferrante-shares-things-never-knew-existed-Australia-like-fridge-fridge.html" },
+          { outlet: "whatsnew2day", title: "canadian expat paul ferrante shares things he didn't know existed in australia", date: "aug 10, 2021",
+            url: "https://whatsnew2day.com/canadian-expat-paul-ferrante-shares-things-he-didnt-know-existed-in-australia-like-fridge-to-fridge/" },
+        ],
+      },
+      {
+        story: "fridge to fridge",
+        blurb: "canadian party guests go \"fridge to fridge\" — baffled aussies",
+        items: [
+          { outlet: "news.com.au", title: "expat's fridge to fridge party claim baffles aussies", date: "aug 9, 2021", tag: "original",
+            url: "https://www.news.com.au/lifestyle/real-life/true-stories/expats-fridge-to-fridge-party-claim-baffles-aussies/news-story/5ab29e8904021803f3bc840391c0c173" },
+          { outlet: "cairns post", title: "regional mirror of the news.com.au story", date: "aug 9, 2021",
+            url: "https://www.cairnspost.com.au/lifestyle/expats-fridge-to-fridge-party-claim-baffles-aussies/news-story/5ab29e8904021803f3bc840391c0c173" },
+          { outlet: "jnews", title: "expat's fridge for fridge party amazes australia", date: "aug 9, 2021",
+            url: "https://jnews.com.au/2021/08/09/expats-fridge-for-fridge-party-amazes-australia/" },
+          { outlet: "escape", title: "syndicated copy of the news.com.au story", date: "aug 10, 2021",
+            url: "https://escape.news.com.au/travel-advice/expats-fridge-to-fridge-party-claim-baffles-aussies/news-story/6fd4e2a66f666360161ace57b78fd669" },
+        ],
+      },
+      {
+        story: "lies about australia",
+        blurb: "debunking what people are told about australia, incl. flesh-eating bears",
+        items: [
+          { outlet: "news.com.au", title: "canadian tiktokker reveals 'lies' people are told about australia", date: "jul 11, 2021", tag: "original",
+            url: "https://www.news.com.au/travel/travel-advice/tips-tricks/canadian-tiktokker-reveals-lies-people-are-told-about-australia/news-story/bfec582b9089081449f5d4a20ad5c81e" },
+          { outlet: "daily advent", title: "canadian expat reveals 'lies' about australia", date: "jul 20, 2021",
+            url: "https://www.dailyadvent.com/gb/news/529efeab0fe48190514501ef0d96ca97-Canadian-expat-reveals-lies-about-Australia" },
+          { outlet: "escape", title: "syndicated copy of the news.com.au story",
+            url: "https://escape.news.com.au/destinations/australia/canadian-tiktokker-reveals-lies-people-are-told-about-australia/news-story/d2e513c56ebe55216f57f2f2a6c28799" },
+        ],
+      },
+      {
+        story: "landlord pet cameras",
+        blurb: "his la building swapped security cameras for furbo pet cameras",
+        items: [
+          { outlet: "newsweek", title: "tenant notices landlord installs cameras, in disbelief after looking closer", date: "may 1, 2024",
+            url: "https://www.newsweek.com/tenant-notices-landlord-installed-cameras-1896093" },
+        ],
+      },
+      {
+        story: "the 3 aussie traits",
+        blurb: "uptalk, coffee snobbery, and pronouncing melbourne \"mel-bin\"",
+        items: [
+          { outlet: "yahoo news australia", title: "the three aussie traits canadian man's friends mock him for", date: "may 6, 2021",
+            url: "https://au.news.yahoo.com/tik-tok-canadians-friends-rips-him-about-since-moving-australia-115306155.html" },
+        ],
+      },
+      {
+        story: "breakfast, mortified",
+        blurb: "aussies \"mortified\" canadians eat tim hortons donuts for breakfast",
+        items: [
+          { outlet: "narcity", title: "a tiktoker said australians are 'mortified' by what canadians eat for breakfast", date: "may 8, 2023",
+            url: "https://www.narcity.com/a-tiktoker-said-australians-are-mortified-by-what-canadians-eat-for-breakfast-heres-why" },
+        ],
+      },
+      {
+        story: "tipping in canada",
+        blurb: "tiktokers getting real about tipping in canada",
+        items: [
+          { outlet: "narcity", title: "tiktokers are getting real about tipping in canada & the confusion is strong", date: "aug 14, 2022",
+            url: "https://www.narcity.com/tiktokers-getting-real-about-tipping-in-canada-the-confusion-is-strong" },
+        ],
+      },
+      {
+        story: "the voyagela interview",
+        blurb: "check out paul ferrante's story",
+        items: [
+          { outlet: "voyagela", title: "in-depth creator interview", date: "june 2026", tag: "interview",
+            url: "https://voyagela.com/interview/check-out-paul-ferrantes-story" },
+        ],
+      },
+    ],
   },
 
   about: {
