@@ -135,7 +135,7 @@ export const content = {
       {
         story: "the coffee ordering fail",
         blurb: "canadian expat couldn't order drip coffee in australia",
-        media: { src: "assets/coffee-story-web.mp4", poster: "assets/thumb-coffee.jpg", label: "studio 10 · 0:36" },
+        media: { src: "assets/coffee-story-web.mp4", poster: "assets/thumb-coffee.jpg", label: "studio 10 · 0:35" },
         items: [
           { outlet: "studio 10", title: "tv segment, network 10", tag: "video" },
           { outlet: "news.com.au", title: "canadian man reveals embarrassing australian coffee mistake on tiktok", date: "dec 17, 2020",
@@ -145,7 +145,7 @@ export const content = {
       {
         story: "three things about australia",
         blurb: "magpie swooping season, group photo gags, and more",
-        media: { src: "assets/three-things-web.mp4", poster: "assets/thumb-three-things.jpg", label: "studio 10 · 1:30" },
+        media: { src: "assets/three-things-web.mp4", poster: "assets/thumb-three-things.jpg", label: "studio 10 · 1:29" },
         items: [
           { outlet: "studio 10", title: "tv segment, network 10", tag: "video" },
           { outlet: "daily mail", title: "canadian expat shares the things he didn't know existed until he moved to australia", date: "aug 10, 2021",
@@ -162,8 +162,6 @@ export const content = {
             url: "https://www.news.com.au/lifestyle/real-life/true-stories/expats-fridge-to-fridge-party-claim-baffles-aussies/news-story/5ab29e8904021803f3bc840391c0c173" },
           { outlet: "cairns post", title: "regional mirror of the news.com.au story", date: "aug 9, 2021",
             url: "https://www.cairnspost.com.au/lifestyle/expats-fridge-to-fridge-party-claim-baffles-aussies/news-story/5ab29e8904021803f3bc840391c0c173" },
-          { outlet: "jnews", title: "expat's fridge for fridge party amazes australia", date: "aug 9, 2021",
-            url: "https://jnews.com.au/2021/08/09/expats-fridge-for-fridge-party-amazes-australia/" },
           { outlet: "escape", title: "syndicated copy of the news.com.au story", date: "aug 10, 2021",
             url: "https://escape.news.com.au/travel-advice/expats-fridge-to-fridge-party-claim-baffles-aussies/news-story/6fd4e2a66f666360161ace57b78fd669" },
         ],
@@ -174,8 +172,6 @@ export const content = {
         items: [
           { outlet: "news.com.au", title: "canadian tiktokker reveals 'lies' people are told about australia", date: "jul 11, 2021", tag: "original",
             url: "https://www.news.com.au/travel/travel-advice/tips-tricks/canadian-tiktokker-reveals-lies-people-are-told-about-australia/news-story/bfec582b9089081449f5d4a20ad5c81e" },
-          { outlet: "daily advent", title: "canadian expat reveals 'lies' about australia", date: "jul 20, 2021",
-            url: "https://www.dailyadvent.com/gb/news/529efeab0fe48190514501ef0d96ca97-Canadian-expat-reveals-lies-about-Australia" },
           { outlet: "escape", title: "syndicated copy of the news.com.au story",
             url: "https://escape.news.com.au/destinations/australia/canadian-tiktokker-reveals-lies-people-are-told-about-australia/news-story/d2e513c56ebe55216f57f2f2a6c28799" },
         ],
