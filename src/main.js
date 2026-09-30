@@ -290,6 +290,7 @@ function renderContact() {
       <p class="eyebrow">${esc(c.eyebrow)}</p>
       <h2>${esc(c.heading)}</h2>
       <p class="contact-copy">${esc(c.copy)}</p>
+      <p class="contact-socials">${content.site.socials.map((s) => `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}</p>
     </div>
     <form class="contact-form reveal" data-endpoint="${esc(c.formEndpoint)}">
       <div class="field-row">
@@ -307,12 +308,13 @@ function renderContact() {
 }
 
 function renderFooter() {
-  const { logo, contactEmail } = content.site;
+  const { logo, contactEmail, socials } = content.site;
   const year = document.lastModified ? new Date(document.lastModified).getFullYear() : "";
   return `
   <footer class="footer">
     <span class="logo">${esc(logo)}</span>
     <a href="mailto:${esc(contactEmail)}">${esc(contactEmail)}</a>
+    <span class="footer-socials">${socials.map((s) => `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(" · ")}</span>
     <span class="footer-fine">${year ? year + " · " : ""}travel &amp; lifestyle creator</span>
   </footer>`;
 }
