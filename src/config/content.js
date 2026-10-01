@@ -78,19 +78,16 @@ export const content = {
     // Cover images are swappable config slots. Cropped clean from phone screenshots
     // (status bar / app nav / view-count overlays removed, caption kept).
     items: [
-      { cover: "assets/config/covers/amex.jpg",              url: "https://www.instagram.com/reels/DMRSfiYPp-J/", platform: "Instagram", label: "Brand Integration",  title: "Native product demo (Amex)", category: "brand work" },
-      { cover: "assets/config/covers/washos.jpg",            url: "https://www.instagram.com/p/DQQLs6ED7Nt/",     platform: "Instagram", label: "Brand Integration",  title: "Routine format (Washos)", category: "brand work" },
-      { cover: "assets/config/covers/american-airlines.jpg", url: "https://www.instagram.com/p/DSYWW0LAF9Q/",    platform: "Instagram", label: "Brand Integration",  title: "AAdvantage travel math (American Airlines)", category: "brand work" },
       { cover: "assets/config/covers/japan-tips.jpg",        url: "https://www.tiktok.com/t/ZP8wnVxhA/",         platform: "TikTok",    label: "Practical Travel",    title: "Japan travel tips, 544.8K plays", category: "travel" },
-      { cover: "assets/config/covers/sorrento.jpg",          url: "https://www.instagram.com/reel/DcAG1dKIMQf/",  platform: "Instagram", label: "Practical Travel",    title: "24 hours in Sorrento, €120 itinerary", category: "travel" },
-      { cover: "assets/config/covers/italy-fines.jpg",       url: "https://www.instagram.com/reel/DaJmhXSIqZ-/",  platform: "Instagram", label: "Practical Travel",    title: "3 things to know before Italy", category: "travel" },
-      { cover: "assets/config/covers/comedy-overspending-v2.jpg", url: "https://www.tiktok.com/t/ZTyf5hB28/",       platform: "TikTok",    label: "Commentary",          title: "Post-surgery overspending diaries", category: "comedy" },
-      { cover: "assets/config/covers/comedy-introvert-v2.jpg",  url: "https://www.tiktok.com/t/ZTyf56jcT/",         platform: "TikTok",    label: "Commentary",          title: "Introvert hard launch", category: "comedy" },
       { cover: "assets/config/covers/comedy-42min.jpg",      url: "https://www.instagram.com/reel/DSYthtej_wZ/",  platform: "Instagram", label: "Commentary",          title: "42-minute conversation about nothing", category: "comedy" },
       { cover: "assets/config/covers/comedy-hotel-v2.jpg",      url: "https://www.instagram.com/reel/DZTeTV2otrd/",  platform: "Instagram", label: "Commentary",          title: "Millennial hotel story", category: "comedy" },
-      { cover: "assets/config/covers/dog-dressup.jpg",       url: "https://www.instagram.com/reel/Dccck2DoBFt/",  platform: "Instagram", label: "Dog Dad",             title: "frank v greta iq test", category: "dog dad" },
+      { cover: "assets/config/covers/italy-fines.jpg",       url: "https://www.instagram.com/reel/DaJmhXSIqZ-/",  platform: "Instagram", label: "Practical Travel",    title: "3 things to know before Italy", category: "travel" },
+      { cover: "assets/config/covers/comedy-introvert-v2.jpg",  url: "https://www.tiktok.com/t/ZTyf56jcT/",         platform: "TikTok",    label: "Commentary",          title: "Introvert hard launch", category: "comedy" },
       { cover: "assets/config/covers/dog-poop-v2.jpg",          url: "https://www.instagram.com/reel/DSTg6WMD80-/",  platform: "Instagram", label: "Dog Dad",             title: "pov: your dog knocks anything under the couch", category: "dog dad" },
+      { cover: "assets/config/covers/sorrento.jpg",          url: "https://www.instagram.com/reel/DcAG1dKIMQf/",  platform: "Instagram", label: "Practical Travel",    title: "24 hours in Sorrento, €120 itinerary", category: "travel" },
       { cover: "assets/config/covers/dog-reactive-v2.jpg",      url: "https://www.instagram.com/reel/DRddjFWj0QN/",  platform: "Instagram", label: "Dog Dad",             title: "when i have to decide if i want to bring my reactive dog out in public", category: "dog dad" },
+      { cover: "assets/config/covers/comedy-overspending-v2.jpg", url: "https://www.tiktok.com/t/ZTyf5hB28/",       platform: "TikTok",    label: "Commentary",          title: "Post-surgery overspending diaries", category: "comedy" },
+      { cover: "assets/config/covers/dog-dressup.jpg",       url: "https://www.instagram.com/reel/Dccck2DoBFt/",  platform: "Instagram", label: "Dog Dad",             title: "frank v greta iq test", category: "dog dad" },
     ],
   },
 
