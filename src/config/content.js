@@ -106,6 +106,8 @@ export const content = {
       { name: "Yves Saint Laurent",  url: "https://www.instagram.com/reel/DAXcsvWRI52/" },
       { name: "True Classic",        url: "https://www.instagram.com/reel/C3q2CwnvZcG/" },
       { name: "American Airlines",   url: "https://www.instagram.com/p/DSYWW0LAF9Q/" },
+      { name: "Amex",                url: "https://www.instagram.com/reels/DMRSfiYPp-J/" },
+      { name: "Washos",              url: "https://www.instagram.com/p/DQQLs6ED7Nt/" },
     ],
   },
 
