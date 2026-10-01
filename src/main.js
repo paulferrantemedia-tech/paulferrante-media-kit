@@ -262,6 +262,11 @@ function renderPress() {
         </video>
         <span class="press-video-label">${esc(c.media.label)}</span>
       </div>` : "";
+    const feature = c.feature ? `
+      <a class="press-feature" href="${esc(c.feature.url)}" target="_blank" rel="noopener" aria-label="${esc(c.story)} — read the feature">
+        <img src="${esc(c.feature.image)}" alt="${esc(c.feature.alt || c.story)}" loading="lazy">
+        <span class="press-video-label">${esc(c.feature.label)}</span>
+      </a>` : "";
     const rows = c.items.map((m) => `
       <li class="press-row">
         <span class="press-outlet">${esc(m.outlet)}</span>
@@ -273,6 +278,7 @@ function renderPress() {
     return `
     <article class="press-card reveal">
       ${media}
+      ${feature}
       <div class="press-body">
         <h3>${esc(c.story)}</h3>
         ${c.blurb ? `<p class="press-blurb">${esc(c.blurb)}</p>` : ""}

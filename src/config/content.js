@@ -155,6 +155,20 @@ export const content = {
         ],
       },
       {
+        story: "the voyagela interview",
+        blurb: "check out paul ferrante's story",
+        feature: {
+          image: "assets/thumb-voyagela.jpg",
+          url: "https://voyagela.com/interview/check-out-paul-ferrantes-story",
+          label: "voyagela · feature",
+          alt: "paul ferrante, voyagela interview",
+        },
+        items: [
+          { outlet: "voyagela", title: "in-depth creator interview", date: "june 2026", tag: "interview",
+            url: "https://voyagela.com/interview/check-out-paul-ferrantes-story" },
+        ],
+      },
+      {
         story: "fridge to fridge",
         blurb: "canadian party guests go \"fridge to fridge\" — baffled aussies",
         items: [
@@ -206,14 +220,6 @@ export const content = {
         items: [
           { outlet: "narcity", title: "tiktokers are getting real about tipping in canada & the confusion is strong", date: "aug 14, 2022",
             url: "https://www.narcity.com/tiktokers-getting-real-about-tipping-in-canada-the-confusion-is-strong" },
-        ],
-      },
-      {
-        story: "the voyagela interview",
-        blurb: "check out paul ferrante's story",
-        items: [
-          { outlet: "voyagela", title: "in-depth creator interview", date: "june 2026", tag: "interview",
-            url: "https://voyagela.com/interview/check-out-paul-ferrantes-story" },
         ],
       },
     ],

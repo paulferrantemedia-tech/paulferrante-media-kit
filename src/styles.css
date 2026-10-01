@@ -165,6 +165,8 @@ a.stat-card:hover { border-color:var(--sky); transform:translateY(-2px); }
 .press-card { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
 .press-video { position:relative; background:#000; }
 .press-video video { width:100%; aspect-ratio:16/9; display:block; }
+.press-feature { position:relative; display:block; background:#000; }
+.press-feature img { width:100%; aspect-ratio:16/9; display:block; object-fit:cover; }
 .press-video-label { position:absolute; top:12px; left:12px; background:rgba(10,10,10,.72); color:#fff; font-size:12px; font-weight:600; padding:6px 10px; border-radius:999px; backdrop-filter:blur(4px); }
 .press-body { padding:20px 20px 8px; }
 .press-body h3 { font-size:19px; margin-bottom:6px; }
