@@ -89,6 +89,9 @@ export const content = {
       { cover: "assets/config/covers/comedy-overspending-v2.jpg", url: "https://www.tiktok.com/t/ZTyf5hB28/",       platform: "TikTok",    label: "Commentary",          title: "Post-surgery overspending diaries", category: "comedy" },
       { cover: "assets/config/covers/dog-lovelanguage-f7f30247.jpg",   url: "https://www.tiktok.com/@paul_ferrante/video/7668134581068909837", platform: "TikTok", label: "Dog Dad", title: "does anyone else do weird shìt with their dogs", category: "dog dad" },
       { cover: "assets/config/covers/comedy-introvert-v2.jpg",  url: "https://www.tiktok.com/t/ZTyf56jcT/",         platform: "TikTok",    label: "Commentary",          title: "Introvert hard launch", category: "comedy" },
+      { cover: "assets/config/covers/spot-tango-98c5da9f.jpg", url: "https://www.instagram.com/reel/DdsCg2Wvo_k/", platform: "Instagram", label: "Sponsored", title: "spot & tango sponsored reel", category: "brand work" },
+      { cover: "assets/config/covers/american-airlines-3861eb74.jpg", url: "https://www.instagram.com/p/DSYWW0LAF9Q/", platform: "Instagram", label: "Sponsored", title: "american airlines partnership", category: "brand work" },
+      { cover: "assets/config/covers/washos-87997f00.jpg", url: "https://www.instagram.com/p/DQQLs6ED7Nt/", platform: "Instagram", label: "Sponsored", title: "washos sponsored reel", category: "brand work" },
     ],
   },
 
