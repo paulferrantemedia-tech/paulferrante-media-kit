@@ -35,11 +35,11 @@ export const stats = {
 
   audience: {
     // --- Follower counts refreshed from the analytics screenshots (live, 2026-07-12). ---
-    totalFollowers: "68.0K",   // 52,800 + 13,391 + 1,790 = 67,981
+    totalFollowers: "68.0K",   // 52,800 + 13,397 + 1,790 = 67,987
     tiktok:         "52.8K",   // TikTok 52,800 followers
-    instagram:      "13.4K", // Instagram 13,391 followers
+    instagram:      "13.4K", // Instagram 13,397 followers
     youtube:        "1.8K",  // YouTube 1,790 subscribers
-    followersUpdated: "Oct 22",
+    followersUpdated: "Oct 23",
 
     // Combined, weighted across YT + IG + TikTok. Percentages.
     age: { "18-24": 14, "25-34": 39, "35-44": 29, "45-54": 12, "55+": 6 }, // jsx:5774 COMBINED_AGE
