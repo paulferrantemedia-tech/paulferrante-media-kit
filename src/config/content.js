@@ -89,9 +89,7 @@ export const content = {
       { cover: "assets/config/covers/comedy-overspending-v2.jpg", url: "https://www.tiktok.com/t/ZTyf5hB28/",       platform: "TikTok",    label: "Commentary",          title: "Post-surgery overspending diaries", category: "comedy" },
       { cover: "assets/config/covers/dog-lovelanguage-f7f30247.jpg",   url: "https://www.tiktok.com/@paul_ferrante/video/7668134581068909837", platform: "TikTok", label: "Dog Dad", title: "does anyone else do weird shìt with their dogs", category: "dog dad" },
       { cover: "assets/config/covers/comedy-introvert-v2.jpg",  url: "https://www.tiktok.com/t/ZTyf56jcT/",         platform: "TikTok",    label: "Commentary",          title: "Introvert hard launch", category: "comedy" },
-      { cover: "assets/config/covers/spot-tango-e4c41ad8.jpg", url: "https://www.instagram.com/reel/DdsCg2Wvo_k/", platform: "Instagram", label: "Sponsored", title: "spot & tango sponsored reel", category: "brand work" },
       { cover: "assets/config/covers/american-airlines-3861eb74.jpg", url: "https://www.instagram.com/p/DSYWW0LAF9Q/", platform: "Instagram", label: "Sponsored", title: "american airlines partnership", category: "brand work" },
-      { cover: "assets/config/covers/washos-373e09eb.jpg", url: "https://www.instagram.com/p/DQQLs6ED7Nt/", platform: "Instagram", label: "Sponsored", title: "washos sponsored reel", category: "brand work" },
     ],
   },
 
@@ -105,13 +103,13 @@ export const content = {
     // Each brand links to the actual post. A brand with no `url` renders as plain text.
     eyebrow: "brands i've created content for",
     items: [
-      { name: "Prada",               url: "https://www.instagram.com/reel/DPXcY4uCMXX/" },
-      { name: "Valentino",           url: "https://www.instagram.com/reel/DIuoFVMTxel/" },
-      { name: "Yves Saint Laurent",  url: "https://www.instagram.com/reel/DAXcsvWRI52/" },
-      { name: "True Classic",        url: "https://www.instagram.com/reel/C3q2CwnvZcG/" },
+      { name: "Prada" },
+      { name: "Valentino" },
+      { name: "Yves Saint Laurent" },
+      { name: "True Classic" },
       { name: "American Airlines",   url: "https://www.instagram.com/p/DSYWW0LAF9Q/" },
-      { name: "Amex",                url: "https://www.instagram.com/reels/DMRSfiYPp-J/" },
-      { name: "Washos",              url: "https://www.instagram.com/p/DQQLs6ED7Nt/" },
+      { name: "Amex" },
+      { name: "Washos" },
     ],
   },
 
