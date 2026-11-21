@@ -79,6 +79,7 @@ export const content = {
     // (status bar / app nav / view-count overlays removed, caption kept).
     items: [
       { cover: "assets/config/covers/japan-tips.jpg",        url: "https://www.tiktok.com/t/ZP8wnVxhA/",         platform: "TikTok",    label: "Practical Travel",    title: "Japan travel tips, 544.8K plays", category: "travel" },
+      { cover: "assets/config/covers/tryst-puerto-vallarta-7ef3a9be.jpg", url: "https://www.tiktok.com/@paul_ferrante/video/7708963881128824078", platform: "TikTok", label: "Hosted Stay", title: "tryst puerto vallarta, room tour", category: "travel" },
       { cover: "assets/config/covers/comedy-42min.jpg",      url: "https://www.instagram.com/reel/DSYthtej_wZ/",  platform: "Instagram", label: "Commentary",          title: "42-minute conversation about nothing", category: "comedy" },
       { cover: "assets/config/covers/comedy-hotel-v2.jpg",      url: "https://www.instagram.com/reel/DZTeTV2otrd/",  platform: "Instagram", label: "Commentary",          title: "Millennial hotel story", category: "comedy" },
       { cover: "assets/config/covers/italy-fines.jpg",       url: "https://www.instagram.com/reel/DaJmhXSIqZ-/",  platform: "Instagram", label: "Practical Travel",    title: "3 things to know before Italy", category: "travel" },
